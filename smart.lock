@@ -1,0 +1,25 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "branch": "shark",
+    "commit": "73090253483576ad05d07058f523ad2cae0677d9"
+  },
+  "dependencies": {
+    "basePackages": {
+      "fake": {},
+      "bootstrap-3": {}
+    },
+    "packages": {
+      "fake": {
+        "git": "https://github.com/subhog/meteor-fake.git",
+        "tag": "v0.3.4",
+        "commit": "e5393ddad6fbee5638e5c430666693828b403abc"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.1.0-1",
+        "commit": "329dccb08bfc18c635676dea600ac9953162cda9"
+      }
+    }
+  }
+}

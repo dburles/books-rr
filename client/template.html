@@ -1,0 +1,48 @@
+<body>
+  <div class="container">
+    {{> books}}
+  </div>
+</body>
+
+<template name="books">
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        <a href="" class="add">Add author and 3 books</a>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>authorsWithBooks</h3>
+      {{> booksList}}
+    </div>
+    <div class="col-md-6">
+      <h3>booksWithAuthors</h3>
+      {{> authorsList}}
+    </div>
+  </div>
+</template>
+
+<template name="booksList">
+  <ul>
+    {{#each books}}
+      <li>{{name}} by <strong>{{author.fullName}}</strong></li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="authorsList">
+  <ul>
+    {{#each authors}}
+      <li>
+        <strong>{{fullName}}</strong>
+        <ul>
+          {{#each books}}
+            <li>{{name}} <a href="" class="delete">x</a></li>
+          {{/each}}
+        </ul>
+      </li>
+    {{/each}}
+  </ul>
+</template>
